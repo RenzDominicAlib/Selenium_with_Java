@@ -1,0 +1,18 @@
+package Lesson_3;
+
+public class DoWhile_loop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int count = 0;
+		
+		do {
+			System.out.println(count);
+			count++;
+		}while (count <= 10);
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Lesson_1;
+
+public class Main_Class {
+
+	public static void main(String[] args) {
+		// Main method
+		System.out.println("Hello WORLD!");
+		
+		
+
+	}
+
+}

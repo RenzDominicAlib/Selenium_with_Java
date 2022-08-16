@@ -1,0 +1,30 @@
+package Lesson_4;
+
+public class Method_exercise_score_calculator {
+	// create a game score calculator using other separate method
+	
+	public static void main(String[] args) {
+			
+		scoreCalculator(true, 50, 5, 10);
+		
+		scoreCalculator(true, 50, 6, 20);
+		
+		scoreCalculator(true, 50, 7, 30);
+
+	}
+	
+	public static void scoreCalculator(boolean isGameover, int score, int level, int bonus) {
+		
+		if(isGameover == true) {
+			
+			int finalScore = score + (level * bonus);
+			System.out.println("score : " + score + " points.");
+			System.out.println("bonus score : " + level + " * " + bonus + " : " + (level * bonus) + " points.");
+			System.out.println("*** You acquired a total of " + finalScore + " points! ***");
+			
+		}
+		
+		
+	}
+
+}

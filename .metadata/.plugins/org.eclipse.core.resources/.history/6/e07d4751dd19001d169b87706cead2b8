@@ -1,0 +1,28 @@
+package Lesson_3;
+
+public class Boolean_exercise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double myNum1 = 15.00;
+		double myNum2 = 80.00;
+		
+		double result = (myNum1 + myNum2) * 100;
+		System.out.println("result = myNum1 + myNum2 = "+result);
+		
+		double remainder = result % 40;
+		System.out.println("remainder when " + result + " is divided by 40 is " + remainder);
+		
+		boolean isZero = (remainder == 0) ? true : false;
+		System.out.println("Is the remainder is 0? : " + isZero);
+		
+		if(isZero != true) {
+			System.out.println("Got some remainder!");
+		}else {
+			System.out.println("No remainder!");
+		}
+
+	}
+
+}

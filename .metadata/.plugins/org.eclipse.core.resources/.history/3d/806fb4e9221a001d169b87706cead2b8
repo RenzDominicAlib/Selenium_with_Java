@@ -1,0 +1,50 @@
+package Lesson_4;
+
+public class Method_overloading_challenge_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double feet = -12;
+		double inches = 5;		
+		double convertedCM = calcFeetAndInchesToCentimeters(feet, inches);
+		System.out.println(feet + " feet and "+ inches + " inches is equal to " + convertedCM + " centimeters.");
+		
+		
+		inches = 5;		
+		convertedCM = calcFeetAndInchesToCentimeters(inches);
+		System.out.println(inches + " inches is equal to " + convertedCM + " centimeters.");
+
+	}
+	
+	public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
+		
+		
+		if(feet >= 0 && inches >= 0 && inches <= 12){
+			
+			double inchesTOcm = inches * 2.54d;
+			double feetTOcm = feet * 12d * 2.54d;
+			double totalCM = inchesTOcm + feetTOcm;
+			return totalCM;
+			
+		}
+		
+		System.out.println("Invalid value");
+		return -1;
+	}
+	
+	public static double calcFeetAndInchesToCentimeters(double inches) {
+			
+			
+			if(inches >= 0){
+				
+				double inchesTOcm = inches * 2.54d;
+				return inchesTOcm;
+				
+			}
+			System.out.println("Invalid value");
+			return -1;
+		}
+	
+
+}

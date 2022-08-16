@@ -1,0 +1,66 @@
+package Lesson_1;
+
+public class Java_Data_Types {
+
+	
+	public static void main(String[] args) {
+		// Main method	
+		String name = "Renz";
+		int sum = 20 + 7;
+		int difference = 20 - 7;
+		int product = 2 * 7;
+		int quotient = 21 / 7;
+		int qty = 23;
+		int minInt = Integer.MIN_VALUE;
+		int maxInt = Integer.MAX_VALUE;
+		float price = (float) 16.5999999;
+		float minFloat = Float.MIN_VALUE;
+		float maxFloat = Float.MAX_VALUE;
+		double cost = 16.5999999;
+		double minDouble = Double.MIN_VALUE;
+		double maxDouble = Double.MAX_VALUE;
+		char code = 'C';
+		char unicodeD = '\u0044';
+		char unicodeCredits = '\u00A9';
+		boolean isBought = false;
+		byte minByte = Byte.MIN_VALUE;
+		byte maxByte = Byte.MAX_VALUE;
+		byte myNewByteValue = (byte)(maxByte / 2);
+		
+		int myFirstnum = 20 + 7;
+		int mySecondnum = 3;
+		int myTotal = myFirstnum + mySecondnum;
+		System.out.println("myTotal = " + myTotal);
+		
+		double pound = 200;
+		double kilogram = pound * 0.45359237d;
+		System.out.println("result : " + pound + "lbs is equal to " kilogram + "kg");
+		
+		
+		
+		
+		System.out.println("Hello " + name + "!");
+		System.out.println("sum = " + sum);
+		System.out.println("difference = " + difference);
+		System.out.println("product = " + product);
+		System.out.println("quotient = " + quotient);
+		System.out.println("qty = " + qty);
+		System.out.println("minInt = " + minInt);
+		System.out.println("maxInt = " + maxInt);
+		System.out.println("price = " + price);
+		System.out.println("minFloat = " + minFloat);
+		System.out.println("maxFloat = " + maxFloat);
+		System.out.println("cost = " + cost);
+		System.out.println("minDouble = " + minDouble);
+		System.out.println("maxDouble = " + maxDouble);
+		System.out.println("code = " + code);
+		System.out.println("unicodeD = " + unicodeD);
+		System.out.println("unicodeCredits = " + unicodeCredits);
+		System.out.println("isBought = " + isBought);
+		System.out.println("minByte = " + minByte);
+		System.out.println("maxByte = " + maxByte);
+		System.out.println("myNewByteValue = " + myNewByteValue);
+		
+	}
+
+}

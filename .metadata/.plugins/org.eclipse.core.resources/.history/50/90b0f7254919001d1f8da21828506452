@@ -1,0 +1,12 @@
+package Lesson_1;
+
+public class Main_Class {
+
+	
+	public static void main(String[] args) {
+		// Main method	
+		String name = "Renz";
+		System.out.println("Hello " + name + "!");	
+	}
+
+}

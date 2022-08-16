@@ -1,0 +1,73 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class Sel_Introduction {
+
+	public static void main(String[] args) {
+		// Invoking the browser
+		// Chrome - ChromeDriver extend -> methods close get
+		// Firefox - FirefoxDriver extend -> methods close get
+		// Safari - SafariDriver extend -> methods close get
+		
+		//		ChromeDriver driver = new ChromeDriver();
+		//		FirefoxDriver driver = new FirefoxDriver();
+		//		SafariDriver driver = new SafariDriver();
+		
+		// Selenium -> geckodriver (webdriver.gecko.driver) act as middle proxy -> FIREFOX browser
+//		System.setProperty("webdriver.gecko.driver", "C:\\Users\\renz dominic alib\\eclipse-workspace\\driver\\geckodriver.exe");
+		// webdriver.gecko.driver -> value of path
+//		WebDriver driver = new FirefoxDriver();
+		
+		// Selenium -> geckodriver (webdriver.gecko.driver) act as middle proxy -> MSedge browser
+//		System.setProperty("webdriver.edge.driver", "C:\\Users\\renz dominic alib\\eclipse-workspace\\driver\\msedgedriver.exe");
+		// webdriver.edge.driver -> value of path
+//		WebDriver driver = new EdgeDriver();
+		
+		// Selenium -> chromedriver (webdriver.chrome.driver) act as middle proxy -> CHROME browser
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\renz dominic alib\\eclipse-workspace\\driver\\chromedriver_win32\\chromedriver.exe");
+		// webdriver.chrome.driver -> value of path
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://demo.guru99.com/test/newtours/index.php");
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getCurrentUrl());
+
+		driver.findElement(By.linkText("REGISTER")).click();
+		
+		driver.findElement(By.name("firstName")).sendKeys("Renz Dominic");
+		driver.findElement(By.name("lastName")).sendKeys("Alib");
+		driver.findElement(By.name("phone")).sendKeys("09292925678");
+		driver.findElement(By.id("userName")).sendKeys("Renz_D1");
+		driver.findElement(By.name("address1")).sendKeys("Bolbok");
+		driver.findElement(By.name("city")).sendKeys("Lipa");
+		driver.findElement(By.name("state")).sendKeys("Ohio");
+		driver.findElement(By.name("postalCode")).sendKeys("2345");
+		Select countryDropdown = new Select(driver.findElement(By.name("country")));
+		countryDropdown.selectByValue("PHILIPPINES");
+		driver.findElement(By.name("email")).sendKeys("rdca@yahoo.com");
+		driver.findElement(By.name("password")).sendKeys("Test112345");
+		driver.findElement(By.name("confirmPassword")).sendKeys("Test112345");
+		
+		driver.findElement(By.name("submit")).click();
+		
+		boolean isPresent = driver.findElement(By.linkText("Note: Your user name is rdca@yahoo.com.")).isDisplayed();
+		System.out.println(isPresent);
+		
+		driver.findElement(By.linkText("sign-in")).click();
+		
+		driver.findElement(By.name("userName")).sendKeys("rdca@yahoo.com");
+		driver.findElement(By.name("password")).sendKeys("Test112345");
+		driver.findElement(By.name("submit")).click();
+		
+//		driver.close();			    // driver.close(); close only the current window.  Note: Your user name is rdca@yahoo.com.
+//		driver.quit();			// driver.quit();  quit the driver; close all the associated window in automation where multiple windows opened.
+		
+
+	}
+
+}
