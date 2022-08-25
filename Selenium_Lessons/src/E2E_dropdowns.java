@@ -63,7 +63,7 @@ public class E2E_dropdowns {
 			driver.findElement(By.id("hrefIncChd")).click();
 		}	
 		Assert.assertTrue(driver.findElement(By.id("divpaxinfo")).getText().equalsIgnoreCase("2 Adult, 4 Child"));
-
+	
 // Click "Done"
 		driver.findElement(By.xpath("//input[@id='btnclosepaxoption']")).click();
 		

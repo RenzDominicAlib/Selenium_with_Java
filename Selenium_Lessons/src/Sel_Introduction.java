@@ -29,7 +29,7 @@ public class Sel_Introduction {
 		// webdriver.gecko.driver -> value of path
 //		WebDriver driver = new FirefoxDriver();
 		
-		// Selenium -> geckodriver (webdriver.gecko.driver) act as middle proxy -> MSedge browser
+		// Selenium -> edge (webdriver.edge.driver) act as middle proxy -> MSedge browser
 //		System.setProperty("webdriver.edge.driver", "C:\\Users\\renz dominic alib\\eclipse-workspace\\driver\\msedgedriver.exe");
 		// webdriver.edge.driver -> value of path
 //		WebDriver driver = new EdgeDriver();

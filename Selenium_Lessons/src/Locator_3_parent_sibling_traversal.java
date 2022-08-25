@@ -18,6 +18,7 @@ public class Locator_3_parent_sibling_traversal {
 		System.out.println(driver.findElement(By.xpath("//header/div/button[1]/following-sibling::button[1]")).getText());
 		System.out.println(driver.findElement(By.xpath("//header/div/button[3]/preceding-sibling::button[1]")).getText());
 		System.out.println(driver.findElement(By.xpath("//header/div/button[3]/parent::div")).getTagName());
+
 		
 		System.out.println("***Execution Completed***");
 	}
