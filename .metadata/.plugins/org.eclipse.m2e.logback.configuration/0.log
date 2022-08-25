@@ -3610,3 +3610,5 @@ java.net.URISyntaxException: Illegal character in path at index 19: file:/C:/Use
 2022-08-26 00:38:54,726 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\renz dominic alib\eclipse-workspace\Selenium_Lessons\src\test\resources
 2022-08-26 00:39:33,955 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-08-26 00:39:33,956 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\renz dominic alib\eclipse-workspace\Selenium_Lessons\src\main\resources
+2022-08-26 00:39:33,958 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-08-26 00:39:33,959 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\renz dominic alib\eclipse-workspace\Selenium_Lessons\src\test\resources
