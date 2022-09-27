@@ -1,0 +1,5 @@
+13:52:17.506 [main] INFO  test.act - Successfully switched to frame
+13:52:17.512 [main] DEBUG test.act - Identifying Draggable objects
+13:52:17.841 [main] INFO  test.act - Drag and drop success
+13:53:05.064 [main] ERROR alpha.Demo_A - error
+13:53:05.069 [main] FATAL alpha.Demo_A - fatal

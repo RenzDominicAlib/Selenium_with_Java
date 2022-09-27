@@ -29,7 +29,7 @@ public class Adding_to_cart_handling {
 		List<String> itemsNeededList = Arrays.asList(itemsNeeded);
 		
 		
-		List<WebElement> addButtons = driver.findElements(By.xpath("//div[@class = 'product-action']/button"));
+		List<WebElement> addButtons = driver.findElements(By.xpath("//button[@class = 'btn w-10 rounded']"));
 		List<WebElement> productNames = driver.findElements(By.xpath("//h4[@class = 'product-name']"));
 		
 		for(int i = 0; i<productNames.size(); i++) {

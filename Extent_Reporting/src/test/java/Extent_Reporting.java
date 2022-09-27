@@ -10,15 +10,16 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Extent_Reporting {
 	
-	ExtentReports extent = new ExtentReports();
+	ExtentReports extent;
 	
 	@BeforeTest
 	public void extentReport_config() {
 		String path = System.getProperty("user.dir") + "\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 		reporter.config().setReportName("Web Automation Testing");
-		reporter.config().setDocumentTitle("Test Results");
+		reporter.config().setDocumentTitle("Test Extent Reports");
 		
+		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Automation Tester", "RDCA");
 	}

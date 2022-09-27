@@ -33,36 +33,37 @@ public class Java_Data_Types {
 		int myFirstnum = 20 + 7;
 		int mySecondnum = 3;
 		int myTotal = myFirstnum + mySecondnum;
-		System.out.println("myTotal = " + myTotal);
+//		System.out.println("myTotal = " + myTotal);
 		
 		int pound = 200;
 		double kilogram = pound * 0.45359237d;
-		System.out.println("result : " + pound + "lbs is equal to " + kilogram + "kg");
+//		System.out.println("result : " + pound + "lbs is equal to " + kilogram + "kg");
 		
 		
 		
-		System.out.println("Hello " + name + "\u00A9");
-		System.out.println("sum = " + sum);
-		System.out.println("difference = " + difference);
-		System.out.println("product = " + product);
-		System.out.println("quotient = " + quotient);
+
+//		System.out.println("sum = " + sum);
+//		System.out.println("difference = " + difference);
+//		System.out.println("product = " + product);
+//		System.out.println("quotient = " + quotient);
 		System.out.println("qty = " + qty);
-		System.out.println("minInt = " + minInt);
-		System.out.println("maxInt = " + maxInt);
+		System.out.println("Hello " + name + "\u00A9");
+//		System.out.println("minInt = " + minInt);
+//		System.out.println("maxInt = " + maxInt);
 		System.out.println("price = " + price);
-		System.out.println("minFloat = " + minFloat);
-		System.out.println("maxFloat = " + maxFloat);
+//		System.out.println("minFloat = " + minFloat);
+//		System.out.println("maxFloat = " + maxFloat);
 		System.out.println("cost = " + cost);
-		System.out.println("minDouble = " + minDouble);
-		System.out.println("maxDouble = " + maxDouble);
+//		System.out.println("minDouble = " + minDouble);
+//		System.out.println("maxDouble = " + maxDouble);
 		System.out.println("code = " + code);
 		System.out.println("degree = " + degree);
-		System.out.println("unicodeD = " + unicodeD);
-		System.out.println("unicodeCredits = " + unicodeCredits);
+//		System.out.println("unicodeD = " + unicodeD);
+//		System.out.println("unicodeCredits = " + unicodeCredits);
 		System.out.println("isBought = " + isBought);
-		System.out.println("minByte = " + minByte);
-		System.out.println("maxByte = " + maxByte);
-		System.out.println("myNewByteValue = " + myNewByteValue);
+//		System.out.println("minByte = " + minByte);
+//		System.out.println("maxByte = " + maxByte);
+//		System.out.println("myNewByteValue = " + myNewByteValue);
 	
 //		*******Array************
 		
@@ -72,15 +73,50 @@ public class Java_Data_Types {
 		arr[2] = 1000;
 		arr[3] = 10000;
 		arr[4] = 100000;
+//		System.out.println(arr[0]+","+arr[1]+","+arr[2]+","+arr[3]+","+arr[4]);
 		
 		int[] arr2 = {20, 200, 2000, 20000, 200000};
+//		System.out.println(arr2[0]+","+arr2[1]+","+arr2[2]+","+arr2[3]+","+arr2[4]);
 		
 		
-		System.out.println(arr[0]+","+arr[1]+","+arr[2]+","+arr[3]+","+arr[4]);
-		System.out.println(arr2[0]+","+arr2[1]+","+arr2[2]+","+arr2[3]+","+arr2[4]);
+		
+		// 1  2  3
+		// 4  5  6
+		// 7  8  9
+		
+		int[][] arr3 = new int[3][3];
+		arr3[0][0] = 1;
+		arr3[0][1] = 2;
+		arr3[0][2] = 3;
+		arr3[1][0] = 4;
+		arr3[1][1] = 5;
+		arr3[1][2] = 6;
+		arr3[2][0] = 7;
+		arr3[2][1] = 8;
+		arr3[2][2] = 9;
+		
+		for(int i=0;i<3;i++) {		
+			for(int k=0;k<3;k++) {
+				System.out.print(arr3[i][k]);
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		
+		
+		int[][] arr4 = {{1,2,3},{2,4,6},{3,6,9}};
+		for(int i=0;i<3;i++) {		
+			for(int k=0;k<3;k++) {
+				System.out.print(arr4[i][k]);
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+
+
 		
 		for(int i = 0; i<arr.length; i++) {
-			System.out.println(arr[i]);
+//			System.out.println(arr[i]);
 		}
 		
 		for(int i = 0; i<arr2.length; i++) {
@@ -105,6 +141,18 @@ public class Java_Data_Types {
 		for(int i = 0; i<arrList_1.size(); i++) {
 			System.out.println(arrList_1.get(i));
 		}
+		
+		int[] vars = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		for(int i = 0; i<vars.length; i++) {
+			
+			if(vars[i] % 2 == 0) {
+				System.out.println(vars[i]);
+			}
+		}
+		
+		
+		
+		
 		
 	}
 

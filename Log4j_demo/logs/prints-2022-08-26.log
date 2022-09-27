@@ -1,0 +1,8 @@
+11:45:40.017 [main] DEBUG test.act - Setting chrome driver property
+11:47:06.773 [main] DEBUG test.act - Setting chrome driver property
+11:47:11.384 [main] INFO  test.act - Window Maximized
+11:47:11.385 [main] DEBUG test.act - Now hitting Amazon server
+11:47:15.625 [main] INFO  test.act - Landed on amazon home page
+11:47:31.996 [main] DEBUG test.act - Getting the frames count
+11:47:32.020 [main] INFO  test.act - Frames count retreived
+11:47:32.047 [main] INFO  test.act - Successfully switched to frame

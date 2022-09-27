@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="tests.ChromeBrowser_Test">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ChromeBrowser_Test -->
+      <class name="tests.NativeApp_Test">
+        <methods>
+          <include name="calculatorTest"/>
+        </methods>
+      </class> <!-- tests.NativeApp_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
