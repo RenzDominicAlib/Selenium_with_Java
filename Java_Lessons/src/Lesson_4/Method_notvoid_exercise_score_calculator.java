@@ -17,6 +17,8 @@ public class Method_notvoid_exercise_score_calculator {
 		scoreCalculator(isGameover, score, level, bonus);
 		
 		scoreCalculator(false, 900, 9, 90);
+		
+		Method_notvoid_exercise_score_calculator.scoreCalculator(true, 123, 123, 123);
 
 	}
 	

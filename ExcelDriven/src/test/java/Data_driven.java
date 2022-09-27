@@ -17,7 +17,7 @@ public class Data_driven {
 
 	}
 
-	public ArrayList<String> getData(String sheetName, String testCaseName) throws IOException {
+	public ArrayList<String> getData(String sheetName, String RowSelection) throws IOException {
 
 		ArrayList datas = new ArrayList();
 
@@ -37,7 +37,7 @@ public class Data_driven {
 				XSSFSheet sheetNeeded = workBook.getSheetAt(i);
 				// From here, Create a logic based on data cell structures
 
-				// Access the "Row" where "TestCases" is located
+				// Access the "Row" where "RowSelection" is located
 				java.util.Iterator<Row> rows = sheetNeeded.rowIterator(); // Sheet is a collection of rows
 				Row headerRow = rows.next();
 
@@ -47,17 +47,17 @@ public class Data_driven {
 				int coloumnIndex = 0;
 				while (HeaderCells.hasNext()) {
 					Cell HeaderCellValue = HeaderCells.next();
-					if (HeaderCellValue.getStringCellValue().equalsIgnoreCase("TestCases")) {
-						// desired coloumn where "TestCases" is located
+					if (HeaderCellValue.getStringCellValue().equalsIgnoreCase("RowSelection")) {
+						// desired coloumn where "RowSelection" is located
 						coloumnIndex = k;
 					}
 					k++;
 				}
-				System.out.println("From the row header, 'TestCases' has a column index of " + coloumnIndex);
+				System.out.println("From the row header, 'RowSelection' has a column index of " + coloumnIndex);
 
 				while (rows.hasNext()) {
 					Row currentRow = rows.next();
-					if (currentRow.getCell(coloumnIndex).getStringCellValue().equalsIgnoreCase(testCaseName)) {
+					if (currentRow.getCell(coloumnIndex).getStringCellValue().equalsIgnoreCase(RowSelection)) {
 						// desired row where testCaseName is located
 						java.util.Iterator<Cell> currRowCells = currentRow.iterator();
 						while (currRowCells.hasNext()) {

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-06T07:41:18Z" name="Default suite" finished-at="2022-09-06T07:41:49Z" duration-ms="30947">
+    <groups>
+    </groups>
+    <test started-at="2022-09-06T07:41:18Z" name="Default test" finished-at="2022-09-06T07:41:49Z" duration-ms="30947">
+      <class name="tests.NativeApp_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.NativeApp_Test@2421cc4]" started-at="2022-09-06T15:41:18Z" name="setup" finished-at="2022-09-06T15:41:18Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="calculatorTest()[pri:0, instance:tests.NativeApp_Test@2421cc4]" started-at="2022-09-06T15:41:18Z" name="calculatorTest" finished-at="2022-09-06T15:41:48Z" duration-ms="30199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculatorTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.NativeApp_Test@2421cc4]" started-at="2022-09-06T15:41:48Z" name="teardown" finished-at="2022-09-06T15:41:49Z" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.NativeApp_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

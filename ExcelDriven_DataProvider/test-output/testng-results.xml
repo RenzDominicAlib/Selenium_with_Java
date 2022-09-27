@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-27T12:31:55Z" name="Default suite" finished-at="2022-09-27T12:32:13Z" duration-ms="18059">
+    <groups>
+    </groups>
+    <test started-at="2022-09-27T12:31:55Z" name="Default test" finished-at="2022-09-27T12:32:13Z" duration-ms="18059">
+      <class name="testComponents.ExcelData_driven">
+        <test-method signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testComponents.ExcelData_driven@be68757]" started-at="2022-09-27T20:31:56Z" name="login" data-provider="user_login_creds" finished-at="2022-09-27T20:32:04Z" duration-ms="8409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[renz@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Renz@071526]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testComponents.ExcelData_driven@be68757]" started-at="2022-09-27T20:32:04Z" name="login" data-provider="user_login_creds" finished-at="2022-09-27T20:32:08Z" duration-ms="3808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INCORRECT@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Renz@0715]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testComponents.ExcelData_driven@be68757]" started-at="2022-09-27T20:32:08Z" name="login" data-provider="user_login_creds" finished-at="2022-09-27T20:32:13Z" duration-ms="4956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[INCORRECT@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Renz@071526]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- testComponents.ExcelData_driven -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

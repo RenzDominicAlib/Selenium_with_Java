@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel= "tests" name="Suite">
+	<test thread-count="5" name="Submit order end to end testing">
+		<classes>
+			<class name="testPackage.SubmitOrder_test" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Invalid login testing">
+		<classes>
+			<class name="testPackage.ErrorLogin_test" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
